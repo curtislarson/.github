@@ -1,0 +1,31 @@
+name: "Name"
+description: "Description"
+title: "[Header]: Title"
+labels: ["Label1", "Label2"]
+assignees:
+  - quackware
+body:
+  - type: dropdown
+    id: dropdown
+    attributes:
+      label: "Label for attr"
+      options:
+        - "Option 1"
+        - "Option 2"
+        - "Option 3"
+  - type: textarea
+    id: textarea
+    attributes:
+      label: "Label"
+      placeholder: "Placeholder"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "### Markdown with hashes need quotes"
+
+  - type: markdown
+    attributes:
+      value: |
+        "### No idea about multi line
+         But yaml is the worst
